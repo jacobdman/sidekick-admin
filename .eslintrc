@@ -1,0 +1,22 @@
+{
+  "extends": "react-app",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "arrow-parens": ["warn", "as-needed"],
+    "no-mixed-operators": "off",
+    "no-useless-escape": "off",
+    "import/no-anonymous-default-export": "off"
+  },
+  "env": {
+    "mocha": true
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}

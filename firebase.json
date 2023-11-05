@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "sidekick-admin-a7a34",
+    "public": "build",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/api/v1/**",
+        "function": "v1Api"
+      }
+    ]
+  }
+}
